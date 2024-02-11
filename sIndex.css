@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    font-family: 'OpenSans';
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('font/OpenSans-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+
+/* Tag */
+a {
+    color: white;
+    text-decoration: none; 
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+hr {
+    height: 2px;
+    margin: 60px 15px 10px;
+    background-color: #29D655;
+}
+/* Tag End */
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: green;
+    box-sizing: border-box;
+    box-shadow: 2px 0 10px #333;
+}
+
+.nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    padding: 10px 2%; 
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav .kebun {
+    color: #29D655; /* Diubah untuk kontras yang lebih baik dengan latar belakang */
+    font-style: italic;
+    font-size: 130%;
+    font-weight: bolder;
+    text-shadow: 0 2px 1px #333;
+}
+
+.nav .ku {
+    color:  #D65529; /* Diubah untuk kontras yang lebih baik dengan latar belakang */
+    font-style: italic;
+    font-size: 130%;
+    font-weight: bolder;
+    text-shadow: 0 2px 1px #333;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 25px; 
+    overflow: hidden; 
+    width: 50%; 
+    min-width: 200px;
+    box-sizing: border-box; 
+    justify-content: space-between;
+}
+
+#search-input, #search-btn {
+    border: none;
+    outline: none; 
+}
+
+#search-input {
+    padding: 0 0 0 3px;
+}
+
+#search-btn {
+    padding: 0 10px 0 0;
+    background: white;
+    cursor: pointer;
+}
+
+.menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.navbar {
+    max-height: 0;
+    width: 100%;
+    background-color: green;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: max-height 1s ease-in;
+    -webkit-transition: max-height 1s ease-in;
+    -moz-transition: max-height 1s ease-in;
+    -ms-transition: max-height 1s ease-in;
+    -o-transition: max-height 1s ease-in;
+}
+
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Ganti dengan row untuk horizontal */
+}
+
+.nav-list li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: white; /* Membuat link terlihat */
+    text-align: center;
+}
+/* Navbar End */
+
+
+
+
+
+
+
+
+
+
+/* Content */
+.animation {
+    position: relative;
+    top: 30px;
+    animation: keren 2s;
+    -webkit-animation: keren 2s;
+}
+
+@keyframes keren {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 30px;
+        opacity: 1;
+    }
+}
+
+.intro {
+    width: 100%;
+    background-image: url(img/latar5.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 800px;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+.isi {
+    padding: 150px 0 100px;
+}
+
+.learn p {
+    display: inline;
+    color: #29D655;
+    padding: 15px;
+    border: 3px solid #29D655;
+    font-size: small;
+    font-style: italic;
+}
+
+.jarak {
+    padding: 50px;
+}
+
+.animasi {
+    background-color: white;
+    width: 2px;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+    animation: kebawah 2s infinite;
+    -webkit-animation: kebawah 2s infinite;
+}
+
+@keyframes kebawah {
+    0% {
+        height: 0px;
+        top: 0;
+    }
+    33% {
+        height: 100px;
+        top: 0;
+    }
+    100% {
+        height: 0px;
+        top: 100px;
+    }
+}
+
+.konten {
+    background-color: #dbdee3;
+    padding: 50px 0 40px;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: lighter;
+    margin: 0 0 20px;
+}
+
+
+.newproduk {
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.container1 {
+    font-size: smaller;
+    font-weight: lighter;
+    margin: 0 0 40px;
+}
+
+.card1, .card2 {
+    width: 125px;
+    padding: 10px;
+}
+
+.card1 {
+    float: right;
+}
+
+.card2 {
+    float: left;
+}
+
+.text1 {
+    padding: 10px;
+    text-align: end;
+}
+
+.text2 {
+    padding: 10px;
+    text-align: start;
+}
+
+.animasiAktif {
+    opacity: 1;
+    transform: translateY(-30px);/
+}
+/* Content End*/
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.foot {
+    display: flex;
+    background-color:green;
+    padding: 5px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sosial {
+    align-self: center;
+    margin: 5px 0 0;
+}
+
+.sosial a {
+    margin: 10px;
+}
+
+.link {
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.link a {
+margin: 2% 3%;
+}
+
+.copy {
+    align-self: center;
+    margin: 3px;
+}
+
+.copy p {
+    color: white;
+    font-size: smaller;
+}
+
+.foot a {
+    text-decoration: none;
+}
+/* Footer End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
